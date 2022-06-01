@@ -138,12 +138,20 @@ body {
 	padding-top: 0.7rem;
 }
 
-.footer > p {
+.footer > button {
 	margin: 0 0 3px 0;
-	width: fit-content;
+	border: none;
+	text-decoration: none;
+	background: none;
+	padding: 0;
+	color: var(--brandeis-blue);
+	font-weight: inherit;
+	font-family: inherit;
+	font-size: inherit;
 }
 
-.footer > p:hover {
+.footer > button:hover {
 	margin: 0;
 	border-bottom: 3px solid var(--brandeis-blue);
+	cursor: pointer;
 }
