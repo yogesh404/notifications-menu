@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+	--brandeis-blue: #0072fa;
+	--royal-blue: #3475dd;
+	--white-smoke: #f6f6f6;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 1rem;
+	font-family: Inter, sans-serif;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-weight: 600;
+	min-width: 400px;
+}
+
+.container {
+	box-shadow: 0 0 10px 1px rgb(214, 214, 214);
+	border-radius: 7px;
+	padding: 1rem 1rem;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-weight: 600;
+}
+
+.header > button {
+	display: flex;
+	align-items: center;
+	border: none;
+	text-decoration: none;
+	background: none;
+	color: var(--brandeis-blue);
+	font-weight: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	padding: 2px 0;
+	align-items: center;
+}
+
+.header > button:hover {
+	cursor: pointer;
+}
+
+.header > button span {
+	margin-bottom: 3px;
+	margin-left: 0.2rem;
+}
+
+.header > button:hover span {
+	margin-bottom: 0;
+	border-bottom: 3px solid var(--brandeis-blue);
+}
+
+.header svg {
+	height: 30px;
+	width: 30px;
+}
+
+.notifications {
+	padding: 0.2rem 0 0.5rem;
+}
+
+.notification {
+	display: flex;
+	flex-direction: row;
+	padding: 1rem 0.5rem;
+	border-radius: 10px;
+}
+
+.notification:hover {
+	background: var(--white-smoke);
+}
+
+.notification:hover .text {
+	color: var(--brandeis-blue);
+}
+
+.notification > .badge {
+	order: 0;
+	color: var(--brandeis-blue);
+	font-size: 25px;
+	padding: 0.5rem 1rem 0 0;
+}
+
+.notification .text-container {
+	order: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.notification .text {
+	margin-bottom: 0.7rem;
+}
+
+.notification .subtext {
+	font-weight: 400;
+	font-size: 14px;
+	color: #999999;
+	margin-top: 0;
+}
+
+.notification .icon-container {
+	order: 2;
+	min-height: 90px;
+	flex: 0 0 90px;
+}
+
+.notification .icon-container > img {
+	position: relative;
+	height: 50px;
+	width: 50px;
+	top: 25%;
+	left: 25%;
+	border-radius: 50%;
+}
+
+.notification .icon-container > img.svg {
+	background-color: var(--brandeis-blue);
+	padding: 0.4rem;
+}
+
+.footer {
+	border-top: 2px solid #e7e7e7;
+	color: var(--brandeis-blue);
+	padding-top: 0.7rem;
+}
+
+.footer > p {
+	margin: 0 0 3px 0;
+	width: fit-content;
+}
+
+.footer > p:hover {
+	margin: 0;
+	border-bottom: 3px solid var(--brandeis-blue);
+}
